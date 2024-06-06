@@ -5,21 +5,31 @@
     --sfondo-buzz:  rgb(255, 209, 102);
     --sfondo-fizzbuzz: rgb(240, 70, 111);
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-page {
+    background-color: var(--sfondo-dom);
+}
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 5% 10%;
 }
 .box {
-    min-width: calc(100% / 10 - 10px);
+    min-width: calc(100% / 7 - 10px);
     background-color: var(--sfondo-number);
     margin: 5px;
     max-width: 100px;
-    height: 100px;
+    height: 150px;
     display:flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    font-size: 24px;
 }
 .fizz {
     background-color: var(--sfondo-fizz);
@@ -29,4 +39,10 @@
 }
 .fizzbuzz {
     background-color: var(--sfondo-fizzbuzz);
+}
+.white-text {
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 72px;
 }
