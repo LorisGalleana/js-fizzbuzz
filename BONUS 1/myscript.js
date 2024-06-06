@@ -22,8 +22,7 @@ for (let i=1; i <= 100; i++) {
         elementBox.append(i)
         console.log(i);
     }
-    //aggiungo all'elemento "elementBox" la variabile "i"
-    //elementBox.append(i);
+    
     // aggiungo all'interno dell'elemento "fizzbuzz" la variabile "elementBox"
     fizzbuzz.appendChild(elementBox);
 
